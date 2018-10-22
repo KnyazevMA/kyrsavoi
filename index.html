@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ua_Veshi</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- VUE -->
+<script src="js/vue.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="New Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
+<!-- start menu -->
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>
+<script src="js/simpleCart.min.js"> </script>
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="header-top">
+					<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>	
+				</div>
+		<div class="container">
+			<div class="head-top">
+
+		  <div class=" h_menu4">
+				<ul class="memenu skyblue">
+	
+				  	  <li class="grid"><a class="color2" href="#">Категорії</a>
+					  	<div class="mepanel">
+						<div class="row">
+							<div class="col1">
+								<div class="h_nav">
+									<ul>
+										<li><a href="products.html">Штани</a></li>
+										<li><a href="products.html">Футболки</a></li>
+										<li><a href="products.html">Рюкзаки</a></li>
+										<li><a href="products.html">Куртки</a></li>
+										<li><a href="products.html">Взуття</a></li>
+										<li><a href="products.html">Світшоти</a></li>
+									</ul>	
+								</div>												
+							</div>
+						  </div>
+						</div>
+			    </li>
+						
+						<li><a class="color3" href="login.html">Авторизація</a></li>
+						
+						<li><a class="color4" href="register.html">Реєстрація</a></li>
+						
+			<li><a class="color6" href="contact77.html">Контакти</a></li>
+							<li>	<div class="cart box_1">
+						<a href="checkout.html">
+						<h3> <div class="total">
+							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> товарів)</div>
+							<img src="images/cart.png" alt=""/></h3>
+						</a>
+							<p><a href="javascript:;" class="simpleCart_empty">Очистити корзину</a></p>
+						</a>	
+							</li>			
+					</div>
+			  </ul> 
+			</div>
+
+				<div class="clearfix"> </div>
+		</div>
+		</div>
+
+	</div>
+<div class="content">
+	<div class="container">
+	<div class="content-top">
+	
+		<h1>НОВА КОЛЕКЦІЯ</h1>
+<!-- Категории старт -->
+<div id="app">
+    <div class="main">
+        <div class="catergores">           
+        
+            <div class="categore" v-for="(categores, index) in categores">
+                <div class="categore-image">            
+                    <img v-bind:src="categores.src">
+                </div>
+                <div class="infocat">
+                    <h4 class="item-title">{{categores.name}}</h4>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+<!--Категории конец -->
+	<div class="content-bottom">
+		<ul>
+			<li><a href="#"><img class="img-responsive" src="images/lo.png" alt=""></a></li>
+			<li><a href="#"><img class="img-responsive" src="images/lo1.png" alt=""></a></li>
+			<li><a href="#"><img class="img-responsive" src="images/lo2.png" alt=""></a></li>
+			<li><a href="#"><img class="img-responsive" src="images/lo3.png" alt=""></a></li>
+			<li><a href="#"><img class="img-responsive" src="images/lo4.png" alt=""></a></li>
+			<li><a href="#"><img class="img-responsive" src="images/lo5.png" alt=""></a></li>
+		<div class="clearfix"> </div>
+		</ul>
+	</div>
+</div>
+<div class="footer">
+				<div class="container">
+			<div class="footer-top-at">
+			
+				<div class="col-md-4 amet-sed">
+				<h4>Графік роботи:</h4>
+				<ul class="nav-bottom">
+						<li><a href="#">Пн-Пт: 9:00-18:00</a></li>
+						<li><a href="#">Сб: 9:00-16:00</a></li>
+						<li><a href="contact.html">Нд: выхідний</a></li>
+						
+					</ul>	
+				</div>
+				<div class="col-md-4 amet-sed ">
+				<h4>Контакти:</h4>
+					<p>Number: +380500148358</p>
+					<p>Viber: +380661234563</p>
+					<p>Email:sportmax@ukr.net</p>
+					</ul>
+				</div>
+				</ul>	
+				
+				<div class="col-md-4 amet-sed ">
+				<h4>Адреса:</h4>
+					<p>г. Запоріжжя</p>
+					<p>пр. Соборный 198</p>
+					<p>ООО: "SportMax"</p>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="footer-class">
+		<p >© 2015 New store All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		</div>
+		</div>
+<!-- Скрипты начало -->
+<!-- Выгрузка товаров -->
+<script type="text/javascript" src="js/script.js"></script>
+<!-- Конец скриптов -->
+</body>
+</html>
+			
