@@ -28,6 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
+<div id="app">
 <div class="header">
 	<div class="header-top">
 					<div class="logo">
@@ -77,6 +78,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 
 				<div class="clearfix"> </div>
+
+				<form class="searchbar">
+					<input placeholder="Поиск" v-model="search">
+				</form>
 		</div>
 		</div>
 
@@ -153,11 +158,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-9 product1">
 				<div id="product-bottom">
-<!--  -->
-<div id="app">
-				<form class="searchbar">
-					<input placeholder="Поиск" v-model="search">
-				</form>
     <div class="main">
         <div class="catergores">           
             <div class="categore" v-for="(tovar, index) in filteredItems">
