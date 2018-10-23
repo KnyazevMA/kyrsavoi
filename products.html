@@ -155,13 +155,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div id="product-bottom">
 <!--  -->
 <div id="app">
-				<form class="searchbar" v-on:submit.prevent="onSubmit">
+				<form class="searchbar">
 					<input placeholder="Поиск" v-model="search">
-					<input type="submit"  class="btn">
 				</form>
     <div class="main">
         <div class="catergores">           
-            <div class="categore" v-for="(tovar, index) in tovar">
+            <div class="categore" v-for="(tovar, index) in filteredItems">
                 <div class="categore-image">            
                     <img v-bind:src="tovar.src">
                 </div>

@@ -116,16 +116,6 @@ new Vue({
         this.categores = categores;
         this.tovar = tovar;
     },
-    methods: {
-        onSubmit: function(){
-            this.tovar.forEach(element => {
-                if (element.name.toUpperCase().includes(this.search.toUpperCase())) {
-                    this.searchResult.push(element);
-                }
-            });
-            this.tovar = this.searchResult;
-        },
-    },
     computed: {
         filteredItems: function() {
             if (!this.search) {
